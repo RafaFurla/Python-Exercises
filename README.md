@@ -1,2 +1,2 @@
 # Python-Exercises
- Exercises of the Curso in Video Python
+ Exercises of the Course in Video Python

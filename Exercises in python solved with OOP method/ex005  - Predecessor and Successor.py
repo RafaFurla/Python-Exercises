@@ -31,5 +31,5 @@ class PREDSUC:
 msg = PHRASE('An Script that print the predecessor and the successor of the input number', 'blue')
 print(msg.prt())
 num = PREDSUC(input('Input a Integer Number: '))
-print(f"The predecessor of number {num.value} is the number {num.pred()} and the sucessor is number {num.suc()}")
+print(f"The predecessor of number \033[32m{num.value}\033[m is the number \033[33m{num.pred()}\033[m and the sucessor is number \033[31m{num.suc()}\033[m")
 

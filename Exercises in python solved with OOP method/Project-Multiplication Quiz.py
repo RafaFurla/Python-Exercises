@@ -1,11 +1,6 @@
 from random import randint
 import time
 
-
-
-
-
-
 correct = incorrect = 0
 input('You have 10 seconds after pressing enter to answer as many questions as you can! ')
 now = time.time()

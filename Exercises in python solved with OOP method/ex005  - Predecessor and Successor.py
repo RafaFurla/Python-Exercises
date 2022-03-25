@@ -10,7 +10,7 @@ class PHRASE:
             self.message = '\033[33m' + self.message + '\033[m'
         elif self.color == 'violet':
             self.message = '\033[35m' + self.message + '\033[m'
-        elif self.color == 'blue':
+        else:
             self.message = '\033[36m' + self.message + '\033[m'
 
     def prt(self):

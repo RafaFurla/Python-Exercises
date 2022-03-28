@@ -8,7 +8,7 @@ class PWDTEST:
         self.stg = stg
 
     @classmethod
-    def testing(cls, pwd):
+    def _testing(cls, pwd):
         stg = str('')
         # LENGTH
         len_ = len(pwd)
@@ -44,11 +44,23 @@ class PWDTEST:
     def result(self):
         return f"{'Password:':33}'{self.pwd}'\n{'Has password a security length?':33}{self.len_}\n{'Has password upper characters?':33}{self.upper}\n{'Has password lower characters?':33}{self.lower}\n{'Is password alphanumeric?':33}{self.alnum}\n{'Notes:':33}{'The password is strong and was add successfully'}"
 
+    def set_changepass(self, pwd):
+        return PWDTEST._testing(pwd)
+
 
 while True:
-    password = PWDTEST.testing(str(input('Input a password: ')))
+    password = PWDTEST._testing(str(input('Input a password: ')))
     if password is None:
         print('Try again!')
     else:
         print(password.result())
         break
+
+while True:
+    password.set_changepass(str(input('Input your new password: ')))
+    if password is None:
+        print('Try again!')
+    else:
+        print(password.result())
+        break
+print(PWDTEST.__dict__)

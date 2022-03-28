@@ -42,7 +42,7 @@ class WHALE(MAMMALS):
 
 bibi = CAT(name='Bibi')
 willy = WHALE(name='Willy', eyes=1)
-print(f"The name of gatinha do papai is: {bibi.name}")
+print(f"The name of the cat is: {bibi.name}")
 print(bibi.catjump())
 print(f"The name of the whale is: {willy.name}")
 print(f"Willy has {willy.eyes} eye(s)")

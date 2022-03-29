@@ -9,7 +9,7 @@ for c in range(0, len(n)):
     if n[c] % 2 == 0:
         par += 1
 print(f'O número 9 apareceu {n.count(9)} vez(es)')
-if t3 == 0:
+if n.count(3) == 0:
     print('O número 3 não foi digitado em nenhuma posição!')
 else:
     print(f'O número 3 foi digitado {n.count(3)} vez(es) e aparece pela primeira vez na posição {n.index(3) + 1}')

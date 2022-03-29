@@ -30,7 +30,7 @@ class PWDTEST:
             lower = False
             stg += '<Try to put some lower characters>'
         # ALPHANUMERIC
-        if ("0" or "1" or "2" or "3" or "4" or "5" or "6" or "7" or "8" or "9") in pwd:
+        if not pwd.isnumeric() and not pwd.isalpha():
             alnum = True
         else:
             alnum = False

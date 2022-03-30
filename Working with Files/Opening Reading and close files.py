@@ -1,0 +1,5 @@
+file = open(r'C:\Users\rafaf\Desktop\Test Python.txt')
+print(f'First 5 characters: {file.read(5)}')
+print(f'Next 7 characters: {file.read(7)}')
+print(f'The rest: {file.read()}')
+file.close()

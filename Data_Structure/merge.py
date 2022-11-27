@@ -22,10 +22,4 @@ def merge(vector, left, middle, right):
         vector[k] = helper[j]
         j += 1
         k += 1
-    return vector
-
-
-v1 = [10, 20, 30, 40, 50, 5, 15, 25, 35, 45]
-v2 = merge(v1, 0, 4, len(v1))
-print(v2)
 

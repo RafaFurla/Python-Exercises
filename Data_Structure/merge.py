@@ -5,7 +5,7 @@ def merge(vector, left, middle, right):
     i = left
     j = middle + 1
     k = left
-    while (i <=middle) and (j < right):
+    while (i <=middle) and (j <= right):
         if helper[i] < helper[j]:
             vector[k] = helper[i]
             i += 1
@@ -18,8 +18,9 @@ def merge(vector, left, middle, right):
         vector[k] = helper[i]
         i += 1
         k += 1
-    while j < right:
+    while j <= right:
         vector[k] = helper[j]
         j += 1
         k += 1
+    del helper
 

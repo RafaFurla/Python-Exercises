@@ -1,0 +1,23 @@
+import array
+A = array.array("i", [1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 10])
+print(A)
+print(len(A))
+print(A[5])
+print(A.index(10))
+print(A[2:10])
+A[3] = 20
+print(A.tolist())
+A.append(11)
+print(A.tolist())
+A.extend([12, 13, 14])
+print(A.tolist())
+A.insert(3, 0)
+print(A.tolist())
+A.remove(20)
+print(A.tolist())
+A.pop(3)
+print(A.tolist())
+A.reverse()
+print(A.tolist())
+print(A.buffer_info())
+

@@ -1,3 +1,3 @@
 # Python-Exercises
 
-The purpose of this repository is to save exercises that I did to follow the course about HTML5 and CSS3. This course was provided by https://www.cursoemvideo.com/
+The purpose of this repository is to save all exercises that I did and will do with Python and its frameworks and Libraries.
